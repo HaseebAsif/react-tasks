@@ -1,0 +1,413 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+.bell-icon {
+  color: white;
+  height: 80px !important;
+  width: 80px !important;
+}
+
+.notification-count {
+  position: absolute;
+  padding: 20px 0 0 35px;
+  font-size: 22px;
+  font-weight: bolder;
+}
+.notification-field1 {
+  padding: 15px 20px;
+}
+
+.notification-field2 {
+  padding: 15px 20px;
+}
+.notification-field3 {
+  padding: 15px 20px;
+}
+.notification-field4 {
+  padding: 15px 20px;
+}
+
+.notification-message {
+  color: white;
+  display: flex;
+  height: fit-content;
+  border: 4px solid white;
+  width: fit-content;
+  margin: 5px 0 !important;
+}
+
+#grad1 {
+  background-color: #9c27b0;
+  background-blend-mode: color;
+  background-image: linear-gradient(120deg, #ff4081, #81d4fa);
+}
+
+#msform {
+  text-align: center;
+  position: relative;
+  margin-top: 20px;
+}
+
+#msform fieldset .form-card {
+  background: white;
+  border: 0 none;
+  border-radius: 0px;
+  box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.2);
+  padding: 20px 40px 30px 40px;
+  box-sizing: border-box;
+  width: 94%;
+  margin: 0 3% 20px 3%;
+  position: relative;
+}
+
+#msform fieldset {
+  background: white;
+  border: 0 none;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+#msform fieldset:not(:first-of-type) {
+  display: none;
+}
+
+#msform fieldset .form-card {
+  text-align: left;
+  color: black;
+}
+#msform fieldset .form-card > h2 {
+  text-align: left;
+  color: black;
+  padding: 20px 0;
+}
+
+#msform input,
+#msform textarea {
+  padding: 0px 8px 4px 8px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  border-radius: 0px;
+  margin-bottom: 25px;
+  margin-top: 2px;
+  width: 100%;
+  box-sizing: border-box;
+  color: #2c3e50;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+#msform input:focus,
+#msform textarea:focus {
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  border: none;
+  border-bottom: 2px solid skyblue;
+  outline-width: 0;
+}
+
+#msform .action-button {
+  width: 100px;
+  background: #006ab3;
+  color: white;
+  border: 0 none;
+  border-radius: 0px;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin: 10px 5px;
+}
+
+#msform .action-button:hover,
+#msform .action-button:focus {
+  box-shadow: 0 0 0 2px white, 0 0 0 3px skyblue;
+}
+
+#msform .action-button-previous {
+  width: 100px;
+  background: #616161;
+  color: white;
+  border: 0 none;
+  border-radius: 0px;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin: 10px 5px;
+}
+
+#msform .action-button-previous:hover,
+#msform .action-button-previous:focus {
+  box-shadow: 0 0 0 2px white, 0 0 0 3px #616161;
+}
+
+select.list-dt {
+  border: none;
+  outline: 0;
+  border-bottom: 1px solid #ccc;
+  padding: 2px 5px 3px 5px;
+  margin: 2px;
+}
+
+select.list-dt:focus {
+  border-bottom: 2px solid skyblue;
+}
+
+.card {
+  z-index: 0;
+  border: none;
+  border-radius: 0.5rem;
+  position: relative;
+}
+
+.fs-title {
+  font-size: 25px;
+  color: #2c3e50;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+#progressbar {
+  margin-bottom: 30px;
+  overflow: hidden;
+  color: lightgrey;
+}
+
+#progressbar .active {
+  color: #000000;
+}
+
+#progressbar li {
+  list-style-type: none;
+  font-size: 12px;
+  width: 33.33%;
+  float: left;
+  position: relative;
+}
+
+#progressbar #jobtype:before {
+  content: "Job Information";
+}
+
+#progressbar #candidatetype:before {
+  content: "Candidate Type";
+}
+
+#progressbar #shifttimings:before {
+  content: "Shift Timings";
+}
+
+#progressbar li:before {
+  height: 50px;
+  line-height: 45px;
+  display: block;
+  font-size: 18px;
+  color: #ffffff;
+  background: lightgray;
+  padding: 2px;
+}
+
+#progressbar li:after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: lightgray;
+  position: absolute;
+  left: 0;
+  top: 25px;
+  z-index: -1;
+}
+
+#progressbar li.active:before,
+#progressbar li.active:after {
+  background: #006ab3;
+}
+
+.radio-group {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.radio {
+  display: inline-block;
+  width: 204;
+  height: 104;
+  border-radius: 0;
+  background: lightblue;
+  box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 8px 2px;
+}
+
+.radio:hover {
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.radio.selected {
+  box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.fit-image {
+  width: 100%;
+  object-fit: cover;
+}
+.idance .classes-details ul.timetable {
+  margin: 0 0 22px;
+  padding: 0;
+}
+.idance .classes-details ul.timetable li {
+  list-style: none;
+  font-size: 15px;
+  color: #7f7f7f;
+}
+idance .timetable {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.idance .timetable-item {
+  border: 1px solid #d8e3eb;
+  padding: 15px;
+  margin-top: 20px;
+  position: relative;
+  display: block;
+}
+@media (min-width: 768px) {
+  .idance .timetable-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+.idance .timetable-item-img {
+  overflow: hidden;
+  height: 100px;
+  width: 100px;
+  display: none;
+}
+.idance .timetable-item-img img {
+  height: 100%;
+}
+@media (min-width: 768px) {
+  .idance .timetable-item-img {
+    display: block;
+  }
+}
+.idance .timetable-item-main {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  position: relative;
+  margin-top: 12px;
+}
+@media (min-width: 768px) {
+  .idance .timetable-item-main {
+    margin-top: 0;
+    padding-left: 15px;
+  }
+}
+.idance .timetable-item-time {
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+.idance .timetable-item-name {
+  font-size: 14px;
+  margin-bottom: 19px;
+}
+.idance .btn-book {
+  padding: 6px 30px;
+  width: 100%;
+}
+.idance .timetable-item-like {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.idance .timetable-item-like .fa-heart-o {
+  display: block;
+  color: #b7b7b7;
+}
+.idance .timetable-item-like .fa-heart {
+  display: none;
+  color: #f15465;
+}
+.idance .timetable-item-like:hover .fa-heart {
+  display: block;
+}
+.idance .timetable-item-like:hover .fa-heart-o {
+  display: none;
+}
+.idance .timetable-item-like-count {
+  font-size: 12px;
+  text-align: center;
+  padding-top: 5px;
+  color: #7f7f7f;
+}
+.idance .timetable-item-book {
+  width: 200px;
+}
+.idance .timetable-item-book .btn {
+  width: 100%;
+}
+.idance .schedule .nav-tabs {
+  border-bottom: 2px solid #104455;
+}
+.idance .schedule .nav-link {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  font-size: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #3d3d3d;
+  font-weight: 500;
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
+  border-radius: 2px 2px 0 0;
+  padding-left: 0;
+  padding-right: 0;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .idance .schedule .nav-link {
+    font-size: 16px;
+  }
+}
+.idance .schedule .nav-link.active {
+  background: #006ab3;
+  border-color: #006ab3;
+  color: #fff;
+}
+.idance .schedule .nav-link.active:focus {
+  border-color: #104455;
+}
+.idance .schedule .nav-link:hover:not(.active) {
+  background: #46c1be;
+  border-color: #46c1be;
+  color: #fff;
+}
+.idance .schedule .tab-pane {
+  padding-top: 10px;
+}
+.work-timings {
+  display: inline-flex;
+  flex-wrap: wrap;
+  padding: 30px 70px;
+}
+
+.work-timings > a {
+  width: 130px;
+  height: 33px !important;
+  padding: 4px 0;
+}
