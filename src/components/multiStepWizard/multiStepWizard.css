@@ -13,6 +13,44 @@ html {
   width: 80px !important;
 }
 
+.next-button {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.row {
+  margin: 0 !important;
+  justify-content: space-between !important;
+}
+.next-button1 {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 20px;
+}
+
+.job-heading-and-text {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0 55px;
+}
+.step-container {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 15px 55px 5px;
+}
+.aos-init {
+  margin-left: -43px;
+  margin-bottom: 45px;
+}
+.job-post-heading {
+  color: #006ab3;
+}
+
 .notification-count {
   position: absolute;
   padding: 20px 0 0 35px;
@@ -106,6 +144,22 @@ html {
   letter-spacing: 1px;
 }
 
+select.form-control {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+}
+
+select.form-control + svg {
+  float: right;
+  margin-top: -37px;
+  pointer-events: none;
+  background-color: #d3d3d3;
+  height: 37px;
+  width: fit-content;
+  color: #495057;
+}
+
 #msform input:focus,
 #msform textarea:focus {
   -moz-box-shadow: none !important;
@@ -117,7 +171,7 @@ html {
 }
 
 #msform .action-button {
-  width: 100px;
+  width: 150px;
   background: #006ab3;
   color: white;
   border: 0 none;
@@ -133,7 +187,7 @@ html {
 }
 
 #msform .action-button-previous {
-  width: 100px;
+  width: 180px;
   background: #616161;
   color: white;
   border: 0 none;
@@ -178,6 +232,7 @@ select.list-dt:focus {
   margin-bottom: 30px;
   overflow: hidden;
   color: lightgrey;
+  color: lightgrey;
 }
 
 #progressbar .active {
@@ -194,10 +249,12 @@ select.list-dt:focus {
 
 #progressbar #jobtype:before {
   content: "Job Information";
+  border-radius: 0px 29px 29px 0;
 }
 
 #progressbar #candidatetype:before {
   content: "Candidate Type";
+  border-radius: 0px 29px 29px 0;
 }
 
 #progressbar #shifttimings:before {
@@ -216,12 +273,13 @@ select.list-dt:focus {
 
 #progressbar li:after {
   content: "";
-  width: 100%;
-  height: 2px;
-  background: lightgray;
+  width: 100px;
+  height: 72px;
+  background: lightgrey;
   position: absolute;
-  left: 0;
-  top: 25px;
+  top: 0;
+  left: -50px;
+  border-radius: 9999px;
   z-index: -1;
 }
 
@@ -360,24 +418,24 @@ idance .timetable {
   width: 100%;
 }
 .idance .schedule .nav-tabs {
-  border-bottom: 2px solid #104455;
 }
 .idance .schedule .nav-link {
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
+  flex: 1 1;
   font-size: 12px;
+  background-color: lightgray;
   text-align: center;
   text-transform: uppercase;
   color: #3d3d3d;
   font-weight: 500;
-  -webkit-transition: none;
-  -o-transition: none;
   transition: none;
   border-radius: 2px 2px 0 0;
   padding-left: 0;
   padding-right: 0;
   cursor: pointer;
+  margin-right: 4em;
+  margin-left: 3.5em;
+  align-items: center;
+  border-radius: 5px;
 }
 @media (min-width: 768px) {
   .idance .schedule .nav-link {
@@ -398,12 +456,12 @@ idance .timetable {
   color: #fff;
 }
 .idance .schedule .tab-pane {
-  padding-top: 10px;
+  padding-top: 20px;
 }
 .work-timings {
   display: inline-flex;
   flex-wrap: wrap;
-  padding: 30px 70px;
+  padding: 40px 15px;
 }
 
 .work-timings > a {

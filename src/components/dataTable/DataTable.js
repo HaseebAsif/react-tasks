@@ -2,11 +2,9 @@ import React, { useState, useEffect } from "react";
 import { useNotificationContext } from "../../contexts/notificationContext";
 import { data } from "./data";
 
-const DataTable = () => {
+const DataTable = ({ value, setValue, filtereddata, setFilteredData }) => {
   const [search, setSearch] = useState("");
   const [isAdd, setAdd] = useState(false);
-  const [filtereddata, setFilteredData] = useState([]);
-  const [value, setValue] = useState({});
   const { jobNotification, setJobNotification } = useNotificationContext();
   const handleChange = (e) => {
     setSearch(e.target.value);
@@ -126,6 +124,8 @@ const DataTable = () => {
           )}
         </tbody>
       </table>
+      <br />
+      <br />
     </>
   );
 };
